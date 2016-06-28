@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var sexyBG: UIImageView!
+    @IBOutlet weak var sexyButton: UIButton!
+    @IBOutlet weak var kiddiesLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func makeSexy(sender: UIButton) {
+        sexyBG.hidden = false
+        sexyButton.hidden = true
+        kiddiesLabel.hidden = false
+    }
 
 }
 
